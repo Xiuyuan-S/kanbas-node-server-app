@@ -44,20 +44,7 @@ const todos = [
       todo.title = newTitle;
       res.json(todos);
     });
-  
-    // app.delete("/a5/todos/:id", (req, res) => {
-    //   console.log("Received ID to delete:", req.params.id);
-    //   console.log("Current todos:", todos);
-    //   const { id } = req.params;
-    //   const index = todos.findIndex((todo) => todo.id === parseInt(id));
-    //   if (index === -1) {
-    //     console.log("Todo not found for ID:", id);
-    //     res.status(404).send("Todo not found");
-    //     return;
-    //   }
-    //   todos.splice(index, 1);
-    //   res.json(todos);
-    // });
+
     
     app.delete("/a5/todos/:id", (req, res) => {
       const { id } = req.params;
