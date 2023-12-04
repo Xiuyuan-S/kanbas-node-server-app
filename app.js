@@ -15,6 +15,13 @@ const app = express();
 const CONNECTION_STRING = process.env.DB_CONNECTION_STRING || 'mongodb://127.0.0.1:27017/kanbas'
 mongoose.connect(CONNECTION_STRING);
 
+
+app.use(
+    cors({      credentials: true,
+        origin: 'https://a6--zesty-snickerdoodle-1cad7a.netlify.app'}
+
+    )
+    );
    
 CourseRoutes(app);
 
