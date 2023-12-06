@@ -18,7 +18,7 @@ mongoose.connect(CONNECTION_STRING);
 
 app.use(
     cors({      credentials: true,
-        origin: 'https://aa6--splendorous-gecko-72f10f.netlify.app/'}
+        origin: 'https://aa6--splendorous-gecko-72f10f.netlify.app'}
 
     )
     );
